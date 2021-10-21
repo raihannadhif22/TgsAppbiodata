@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AppBiodata</string>
+    <string name="nim_a11_2017_10291">NIM:A11.2017.10291</string>
+    <string name="nama_raihan_nadhif">NAMA:Raihan Nadhif</string>
+    <string name="welcome_to_my_app">Welcome to my app</string>
+    <string name="alamat">Alamat</string>
+    <string name="email">Email</string>
+    <string name="telepon">Telepon</string>
+    <string name="hobby_membaca_dan_game">Hobby : Membaca Dan Game</string>
+    <string name="fotobiodata">FotoBiodata</string>
+</resources>

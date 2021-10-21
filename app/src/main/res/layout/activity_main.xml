@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="kirimTelpon"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:ignore="UsingOnClickInXml">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <Button
+            android:id="@+id/tombolalamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="TampilMaps"
+            android:text="@string/alamat"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="480dp"
+            tools:ignore="MissingConstraints"/>
+
+        <Button
+            android:id="@+id/tombolemail"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:onClick="kirimEmail"
+            android:text="@string/email"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="548dp"
+            tools:ignore="MissingConstraints"/>
+
+        <Button
+            android:id="@+id/tomboltelpon"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:onClick="kirimTelpon"
+            android:text="@string/telepon"
+            tools:layout_editor_absoluteX="142dp"
+            tools:layout_editor_absoluteY="619dp"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="194dp"
+        android:layout_height="298dp"
+        app:srcCompat="@drawable/cz"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/fotobiodata"/>
+
+    <TextView
+        android:id="@+id/tekshobi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/hobby_membaca_dan_game"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teksdeskripsi"/>
+
+    <TextView
+        android:id="@+id/teksdeskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/welcome_to_my_app"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teksnama"/>
+
+    <TextView
+        android:id="@+id/teksnama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nama_raihan_nadhif"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tombolemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teksnim"
+        app:layout_constraintVertical_bias="0.043"
+        tools:ignore="NotSibling"/>
+
+    <TextView
+        android:id="@+id/teksnim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/nim_a11_2017_10291"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
